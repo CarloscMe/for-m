@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>form</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 id="title">
+            formulario de envio
+        </h1>
+
+        <p id="description">
+            en este formulario puedes enviar tus datos
+        </p>
+    </header>
+
+    <form action="" id="survey-form" method="post" class="form">
+
+        <fieldset>
+            <label for="name" id="name-label">
+                nombre
+                <input type="text" name="name" id="name" required placeholder="ingresa tu nombre completo">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="email" id="email-label">
+                email
+                <input type="email" name="email" id="email" required placeholder=" ingresa tu email">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="number" id="number-label">
+                edad
+                <input type="number" name="number" id="number" required min="1" max="100" placeholder="ingresa tu edad">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown">
+                documentos
+                <select name="dropdown" id="dropdown" required>
+                    <option value="" disabled selected>elige una opcion</option>
+                    <option value="cedula">cedula</option>
+                    <option value="pasaprte">pasaporte</option>
+                    <option value="visa">visa</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                ingresos
+                <div>
+                    <label for="option-1">
+                        <input type="radio" name="option" id="option-1" value="$200.000" required>
+                        $200.000
+                    </label>
+                </div>
+
+                <div>
+                    <label for="option-2">
+                        <input type="radio" name="option" id="option-2" value="$500.000" required>
+                        $500.000
+                    </label>
+                </div>
+
+                <div>
+                    <label for="option-3">
+                        <input type="radio" name="option" id="option-3" value="$1.000" required>
+                        $1.000
+                    </label>
+                </div>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                estado civil
+                <select name="drop" id="drop" required>
+                    <option value="" disabled selected>elige una opcion</option>
+                    <option value="soltero">soltero</option>
+                    <option value="casado">casado</option>
+                    <option value="viudo">viudo</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <p>nivel de estudio</p>
+
+            <div>
+                <label for="hola">
+                    <input type="checkbox" name="a" id="primaria" value="primaria">
+                    primaria
+                </label>
+            </div>
+
+            <div>
+                <label for="holas">
+                    <input type="checkbox" name="secundaria" id="secundaria" value="secundaria">
+                    secundaria
+                </label>
+            </div>
+           
+            <div>
+                <label for="cmas">
+                    <input type="checkbox" name="pregrado" id="pregrado" value="pregrado">
+                    pregrado
+                </label>
+            </div>
+            
+            <div>
+                <label for="dede">
+                    <input type="checkbox" name="postgrado" id="postgrado" value="postgrado">
+                    postgrado
+                </label>
+            </div>
+            
+            <div>
+                <label for="ere">
+                    <input type="checkbox" name="tecnica" id="tecnica" value="tecnica">
+                    tecnica
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <p>reseña</p>
+            <textarea name="reseña" id="reseña" placeholder="debe estar bien explicada" required></textarea>
+        </fieldset>
+
+       <div>
+        <button type="submit" id="submit">submit</button>
+       </div>
+        
+    </form>
+
+</body>
+
+</html>
