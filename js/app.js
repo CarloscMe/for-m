@@ -1,12 +1,12 @@
 const submit = document.getElementById("submit");
+const form = document.querySelector("form")
+const name = document.getElementById("#name");
 
-const name = document.getElementById("name");
-
-submit.addEventListener("click", ()=> {
+submit.addEventListener("submit", ()=> {
      
     confirm("¿estas seguro de enviar los datos?");
     alert("gracias por enviarlos");
-    form = document.querySelector("form").style.boxShadow = "0 0 20px #fff";;
+    form.style.boxShadow = "0 0 20px #fff";
 
 });
 
