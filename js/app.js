@@ -2,7 +2,8 @@ const submit = document.getElementById("submit");
 const form = document.querySelector("form")
 const name = document.getElementById("#name");
 
-submit.addEventListener("submit", ()=> {
+submit.addEventListener("submit", (event)=> {
+    event.preventDefault();
      
     confirm("¿estas seguro de enviar los datos?");
     alert("gracias por enviarlos");
