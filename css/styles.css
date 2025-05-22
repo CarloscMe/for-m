@@ -11,6 +11,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background: #01838f;
     /*font-size: clamp(1rem, 2vw, 3rem);*/
 }
 
@@ -26,12 +27,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 10px 0 rgb(243, 241, 241);
-    border-radius: 20px;
     width: 50%;
-    background: #01838f;
 }
-
 
 fieldset{
     padding: 10px;
@@ -39,6 +36,10 @@ fieldset{
     border-radius: 10px;
     margin-top: 10px;
     border: none;
+}
+
+label{
+    user-select: none;
 }
 
 select{
@@ -84,5 +85,13 @@ button{
     outline: none;
 }
 
+@media (max-width: 800px){
 
+    .form{
+       width: 70%;
+    }
+    input{
+        padding: 0 !important;
+    }
+}
 
