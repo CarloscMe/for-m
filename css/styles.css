@@ -1,3 +1,7 @@
+:root{
+    --primary-color: #fff;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,27 +11,28 @@
 
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     background: #01838f;
-    /*font-size: clamp(1rem, 2vw, 3rem);*/
 }
 
 .header{
     display: flex;
     flex-direction: column;
     min-height: 10dvh;
+    width: 100%;
     text-align: center;
     margin-top: 10px;
+    color: var(--primary-color);
 }
 
 .form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 70%;
+    padding: 2rem;
+    margin: 10px auto;
+    border: 1px solid rgb(238, 255, 0);
+    font-size: 1.1rem;
 }
 
 fieldset{
@@ -43,7 +48,7 @@ label{
 }
 
 select{
-    color: rgb(253, 253, 253);
+    color: var(--primary-color);
 }
 
 select:focus{
@@ -52,7 +57,7 @@ select:focus{
 
 option{
     background: rgb(0, 0, 0);
-    color: rgb(248, 243, 243);
+    color: var(--primary-color);
 }
 
 #name, #email, #number, select, textarea{
@@ -64,11 +69,11 @@ option{
 }
 
 input, textarea, ::placeholder{
-    color: rgb(255, 255, 255);
+    color: var(--primary-color);
 }
 
 textarea{
-    min-height: 10dvh;
+    min-height: 5dvh;
     font-family: inherit;
     resize: none;
     overflow: scroll;
@@ -76,22 +81,20 @@ textarea{
 }
 
 button{
-    padding: 10px 80px;
-    border-radius: 20px;
+    padding: .8rem 5rem;
+    border-radius: 2rem;
     margin-bottom: 5px;
+    background: transparent;
 }
 
 #name, #email, #number, textarea:focus-visible{
     outline: none;
 }
 
-@media (max-width: 800px){
-
+@media (max-width: 900px){
+    
     .form{
-       width: 70%;
-    }
-    input{
-        padding: 0 !important;
+       width: 90%;
     }
 }
 
