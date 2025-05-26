@@ -127,9 +127,10 @@
             </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="reseña">
             <legend>reseña</legend>
-            <textarea name="reseña" id="reseña" placeholder="debe estar bien explicada, con 250 caracteres." required></textarea>
+            <textarea name="reseña" id="reseña" placeholder="debe estar bien explicada, con 250 caracteres." required maxlength="250" autocomplete="true"></textarea>
+            <span class="contador"><span class="aumentar">0</span><span class="limite">/250</span></span>
         </fieldset>
 
        <div>
