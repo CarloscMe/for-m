@@ -28,7 +28,7 @@ body{
     padding: 1.2rem;
     margin: 10px auto;
     font-size: 1.1rem;
-    background: #000;
+    background: #025c72;
 }
 
 fieldset{
@@ -73,14 +73,13 @@ textarea{
     min-height: 5dvh;
     font-family: inherit;
     resize: none;
-    overflow: scroll;
     scrollbar-width: none;
 }
 
 button{
     padding: .8rem 5rem;
     border-radius: 2rem;
-    margin-top: 5px;
+    margin-top: 10px;
     background: transparent;
     color: var(--primary-color)
 }
@@ -105,7 +104,19 @@ button{
 @media (max-width: 900px){
     
     .form{
-       width: 90%;
+       width: 95%;
+    }
+    
+    fieldset{
+        width: 100%;
+    }
+
+    button{
+        padding: .7rem 4rem;
+    }
+
+    label , legend{
+        font-size: 1rem;
     }
 }
 
