@@ -28,7 +28,8 @@ body{
     padding: 1.2rem;
     margin: 10px auto;
     font-size: 1.1rem;
-    background: #025c72;
+    background: #1f1f1f;
+    border-radius: .8rem;
 }
 
 fieldset{
@@ -79,8 +80,9 @@ textarea{
 button{
     padding: .8rem 5rem;
     border-radius: 2rem;
+    border: 1px solid #028FD5;
     margin-top: 10px;
-    background: transparent;
+    background: #2595b8;
     color: var(--primary-color)
 }
 
